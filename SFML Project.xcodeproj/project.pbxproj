@@ -1,0 +1,351 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8436C3FD2C21091A006889FD /* MainMenu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8436C3FB2C21091A006889FD /* MainMenu.cpp */; };
+		844B988B2C127071002A8722 /* Player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 844B98892C127071002A8722 /* Player.cpp */; };
+		844B988D2C127104002A8722 /* mainn.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 844B988C2C127104002A8722 /* mainn.cpp */; };
+		844B98902C127162002A8722 /* Game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 844B988E2C127162002A8722 /* Game.cpp */; };
+		844B98992C12816A002A8722 /* Projectile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 844B98972C12816A002A8722 /* Projectile.cpp */; };
+		844B989C2C128E90002A8722 /* Alien.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 844B989A2C128E90002A8722 /* Alien.cpp */; };
+		844B989F2C1E41C2002A8722 /* Rock.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 844B989D2C1E41C2002A8722 /* Rock.cpp */; };
+		848B246D2B6067A70064A74C /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 848B246C2B6067A70064A74C /* OpenGL.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8474C2AD2AE9639C0079A11E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		8436C3FB2C21091A006889FD /* MainMenu.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MainMenu.cpp; sourceTree = "<group>"; };
+		8436C3FC2C21091A006889FD /* MainMenu.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = MainMenu.hpp; sourceTree = "<group>"; };
+		844B98892C127071002A8722 /* Player.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Player.cpp; sourceTree = "<group>"; };
+		844B988A2C127071002A8722 /* Player.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Player.hpp; sourceTree = "<group>"; };
+		844B988C2C127104002A8722 /* mainn.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = mainn.cpp; sourceTree = "<group>"; };
+		844B988E2C127162002A8722 /* Game.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Game.cpp; sourceTree = "<group>"; };
+		844B988F2C127162002A8722 /* Game.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Game.hpp; sourceTree = "<group>"; };
+		844B98972C12816A002A8722 /* Projectile.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Projectile.cpp; sourceTree = "<group>"; };
+		844B98982C12816A002A8722 /* Projectile.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Projectile.hpp; sourceTree = "<group>"; };
+		844B989A2C128E90002A8722 /* Alien.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Alien.cpp; sourceTree = "<group>"; };
+		844B989B2C128E90002A8722 /* Alien.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Alien.hpp; sourceTree = "<group>"; };
+		844B989D2C1E41C2002A8722 /* Rock.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Rock.cpp; sourceTree = "<group>"; };
+		844B989E2C1E41C2002A8722 /* Rock.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Rock.hpp; sourceTree = "<group>"; };
+		8474C2AF2AE9639C0079A11E /* SFML Project */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "SFML Project"; sourceTree = BUILT_PRODUCTS_DIR; };
+		848B246C2B6067A70064A74C /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8474C2AC2AE9639C0079A11E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				848B246D2B6067A70064A74C /* OpenGL.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8474C2A62AE9639C0079A11E = {
+			isa = PBXGroup;
+			children = (
+				8474C2B12AE9639C0079A11E /* SFML Project */,
+				8474C2B02AE9639C0079A11E /* Products */,
+				848B246B2B6067A70064A74C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8474C2B02AE9639C0079A11E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8474C2AF2AE9639C0079A11E /* SFML Project */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8474C2B12AE9639C0079A11E /* SFML Project */ = {
+			isa = PBXGroup;
+			children = (
+				844B988C2C127104002A8722 /* mainn.cpp */,
+				844B988F2C127162002A8722 /* Game.hpp */,
+				844B988E2C127162002A8722 /* Game.cpp */,
+				8436C3FC2C21091A006889FD /* MainMenu.hpp */,
+				8436C3FB2C21091A006889FD /* MainMenu.cpp */,
+				844B988A2C127071002A8722 /* Player.hpp */,
+				844B98892C127071002A8722 /* Player.cpp */,
+				844B989B2C128E90002A8722 /* Alien.hpp */,
+				844B989A2C128E90002A8722 /* Alien.cpp */,
+				844B98982C12816A002A8722 /* Projectile.hpp */,
+				844B98972C12816A002A8722 /* Projectile.cpp */,
+				844B989E2C1E41C2002A8722 /* Rock.hpp */,
+				844B989D2C1E41C2002A8722 /* Rock.cpp */,
+			);
+			path = "SFML Project";
+			sourceTree = "<group>";
+		};
+		848B246B2B6067A70064A74C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				848B246C2B6067A70064A74C /* OpenGL.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8474C2AE2AE9639C0079A11E /* SFML Project */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8474C2B62AE9639C0079A11E /* Build configuration list for PBXNativeTarget "SFML Project" */;
+			buildPhases = (
+				8474C2AB2AE9639C0079A11E /* Sources */,
+				8474C2AC2AE9639C0079A11E /* Frameworks */,
+				8474C2AD2AE9639C0079A11E /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SFML Project";
+			productName = "SFML Project";
+			productReference = 8474C2AF2AE9639C0079A11E /* SFML Project */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8474C2A72AE9639C0079A11E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					8474C2AE2AE9639C0079A11E = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = 8474C2AA2AE9639C0079A11E /* Build configuration list for PBXProject "SFML Project" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8474C2A62AE9639C0079A11E;
+			productRefGroup = 8474C2B02AE9639C0079A11E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8474C2AE2AE9639C0079A11E /* SFML Project */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8474C2AB2AE9639C0079A11E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				844B989F2C1E41C2002A8722 /* Rock.cpp in Sources */,
+				844B988D2C127104002A8722 /* mainn.cpp in Sources */,
+				844B988B2C127071002A8722 /* Player.cpp in Sources */,
+				844B989C2C128E90002A8722 /* Alien.cpp in Sources */,
+				844B98992C12816A002A8722 /* Projectile.cpp in Sources */,
+				8436C3FD2C21091A006889FD /* MainMenu.cpp in Sources */,
+				844B98902C127162002A8722 /* Game.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		8474C2B42AE9639C0079A11E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		8474C2B52AE9639C0079A11E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		8474C2B72AE9639C0079A11E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				"HEADER_SEARCH_PATHS[arch=*]" = (
+					/Users/adnan/Documents/Graphics,
+					project/SFML,
+					Project,
+				);
+				"LD_MAP_FILE_PATH[arch=*]" = "$(TARGET_TEMP_DIR)/$(PRODUCT_NAME)-LinkMap-$(CURRENT_VARIANT)-$(CURRENT_ARCH).txt";
+				"LIBRARY_SEARCH_PATHS[arch=*]" = "/Users/adnan/Downloads/SFML-2.6.0-macos-clang-64-bit/lib";
+				"OTHER_LDFLAGS[arch=*]" = (
+					"-lsfml-graphics",
+					"-lsfml-window",
+					"-lsfml-system\n",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				"USER_HEADER_SEARCH_PATHS[arch=*]" = "\"/Users/adnan/Downloads/SFML-2.6.0-macos-clang-64-bit/include\"\n";
+			};
+			name = Debug;
+		};
+		8474C2B82AE9639C0079A11E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				"HEADER_SEARCH_PATHS[arch=*]" = (
+					/Users/adnan/Documents/Graphics,
+					project/SFML,
+					Project,
+				);
+				"LIBRARY_SEARCH_PATHS[arch=*]" = "/Users/adnan/Downloads/SFML-2.6.0-macos-clang-64-bit/lib";
+				"OTHER_LDFLAGS[arch=*]" = (
+					"-lsfml-graphics",
+					"-lsfml-window",
+					"-lsfml-system\n",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				"USER_HEADER_SEARCH_PATHS[arch=*]" = "\"/Users/adnan/Downloads/SFML-2.6.0-macos-clang-64-bit/include\"\n";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8474C2AA2AE9639C0079A11E /* Build configuration list for PBXProject "SFML Project" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8474C2B42AE9639C0079A11E /* Debug */,
+				8474C2B52AE9639C0079A11E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8474C2B62AE9639C0079A11E /* Build configuration list for PBXNativeTarget "SFML Project" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8474C2B72AE9639C0079A11E /* Debug */,
+				8474C2B82AE9639C0079A11E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8474C2A72AE9639C0079A11E /* Project object */;
+}

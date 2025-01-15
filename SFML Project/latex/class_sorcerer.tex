@@ -1,0 +1,97 @@
+\doxysection{Sorcerer Class Reference}
+\hypertarget{class_sorcerer}{}\label{class_sorcerer}\index{Sorcerer@{Sorcerer}}
+
+
+Inheritance diagram for Sorcerer\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=260pt]{class_sorcerer__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Sorcerer\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=260pt]{class_sorcerer__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_sorcerer_aacf74d3bf9b4cf51c422cd8aa51d1786}\label{class_sorcerer_aacf74d3bf9b4cf51c422cd8aa51d1786} 
+enum class {\bfseries Direction} \{ {\bfseries Up}
+, {\bfseries Down}
+, {\bfseries Left}
+, {\bfseries Right}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_sorcerer_a4b191bfd525d8f7ff74b80692c347bff}\label{class_sorcerer_a4b191bfd525d8f7ff74b80692c347bff} 
+{\bfseries Sorcerer} (float \+\_\+x, float \+\_\+y)
+\item 
+\Hypertarget{class_sorcerer_a4afe46586b307dc442354fa1a97f90cc}\label{class_sorcerer_a4afe46586b307dc442354fa1a97f90cc} 
+const sf\+::\+Circle\+Shape \& {\bfseries get\+Fireball} () const
+\item 
+\Hypertarget{class_sorcerer_ab034e749679ff1663d1875f1f96bbf87}\label{class_sorcerer_ab034e749679ff1663d1875f1f96bbf87} 
+bool {\bfseries is\+Visible} () const
+\item 
+\Hypertarget{class_sorcerer_a3030b4baacda2e0ea5964e81bc9f8f18}\label{class_sorcerer_a3030b4baacda2e0ea5964e81bc9f8f18} 
+void {\bfseries show} ()
+\item 
+void \mbox{\hyperlink{class_sorcerer_a1d40757d280fd345733384ad3ff01618}{update}} () override
+\item 
+void \mbox{\hyperlink{class_sorcerer_a356a5acca904b810e14547912bacd01d}{animate}} () override
+\item 
+void \mbox{\hyperlink{class_sorcerer_ae6805987710a087be46cb6ccb8314dc0}{draw}} (sf\+::\+Render\+Target \&target, sf\+::\+Render\+States states) const override
+\item 
+\Hypertarget{class_sorcerer_aaf735ae7e8c54a83e8bcf9cb2911f2a2}\label{class_sorcerer_aaf735ae7e8c54a83e8bcf9cb2911f2a2} 
+void {\bfseries move} (Direction direction)
+\item 
+\Hypertarget{class_sorcerer_adef8e47e765ab95a95338004b02cd4c9}\label{class_sorcerer_adef8e47e765ab95a95338004b02cd4c9} 
+void {\bfseries toggle\+Fireball} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_sorcerer_a356a5acca904b810e14547912bacd01d}\label{class_sorcerer_a356a5acca904b810e14547912bacd01d} 
+\index{Sorcerer@{Sorcerer}!animate@{animate}}
+\index{animate@{animate}!Sorcerer@{Sorcerer}}
+\doxysubsubsection{\texorpdfstring{animate()}{animate()}}
+{\footnotesize\ttfamily void Sorcerer\+::animate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_animated_object}{Animated\+Object}}.
+
+\Hypertarget{class_sorcerer_ae6805987710a087be46cb6ccb8314dc0}\label{class_sorcerer_ae6805987710a087be46cb6ccb8314dc0} 
+\index{Sorcerer@{Sorcerer}!draw@{draw}}
+\index{draw@{draw}!Sorcerer@{Sorcerer}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Sorcerer\+::draw (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Target \&}]{target,  }\item[{sf\+::\+Render\+States}]{states }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_bitmap_object}{Bitmap\+Object}}.
+
+\Hypertarget{class_sorcerer_a1d40757d280fd345733384ad3ff01618}\label{class_sorcerer_a1d40757d280fd345733384ad3ff01618} 
+\index{Sorcerer@{Sorcerer}!update@{update}}
+\index{update@{update}!Sorcerer@{Sorcerer}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Sorcerer\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_sprite_object}{Sprite\+Object}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+main.\+cpp\end{DoxyCompactItemize}
