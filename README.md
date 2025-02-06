@@ -81,7 +81,7 @@ src/
 ## 📸 Screenshots  
 | Main Menu | Gameplay | Game Over |
 |-----------|----------|-----------|
-| ![Menu](main_menu.png) | ![Game](assets/gameplay.png) | ![Over](assets/game_over.png) |
+| ![Menu](main_menu.png) | ![Game](gameplay.png) | ![Over](game_over.png) |
 
 ---
 
