@@ -3,20 +3,20 @@
 
 Alien::Alien()
 : exploding(false), zigzag(false), speed(1.0f), amplitude(10.0f) {
-// Initialize other properties as needed
+
 }
 
 void Alien::update() {
-// Move downward
+
 m_sprite.move(0, speed);
 
-// Implement zigzag movement if enabled
+
 if (zigzag) {
    float xOffset = amplitude * sin(m_sprite.getPosition().y / 40.0f); // Adjust frequency
    m_sprite.move(xOffset, 0);
 }
 
-// Ensure the alien stays within the window bounds
+
 sf::Vector2f position = m_sprite.getPosition();
 if (position.x < 0) {
    m_sprite.setPosition(0, position.y);
@@ -24,7 +24,7 @@ if (position.x < 0) {
    m_sprite.setPosition(800 - m_sprite.getGlobalBounds().width, position.y);
 }
 
-// Wrap around vertically if the alien moves below the screen
+
 if (position.y > 600) {
    m_sprite.setPosition(position.x, -m_sprite.getGlobalBounds().height);
 }
