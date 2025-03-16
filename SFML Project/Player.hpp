@@ -22,4 +22,4 @@ private:
     bool m_movingRight;
 };
 
-#endif // PLAYER_HPP
+#endif 
