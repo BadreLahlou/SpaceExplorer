@@ -58,4 +58,4 @@ float bestRecord;
 bool isNewRecord;
 };
 
-#endif // GAME_HPP
+#endif 
