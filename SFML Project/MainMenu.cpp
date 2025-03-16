@@ -7,23 +7,23 @@ MainMenu::MainMenu() {
     }
     title.setFont(font);
     title.setString("Space Explorer");
-    title.setCharacterSize(100); // Increased character size
-    title.setFillColor(sf::Color::Blue); // Changed color to blue
-    title.setPosition(150, 100); // Adjusted position for centering
+    title.setCharacterSize(100); 
+    title.setFillColor(sf::Color::Blue); 
+    title.setPosition(150, 100); 
 
     easyOption.setFont(font);
     easyOption.setString("EASY");
-    easyOption.setCharacterSize(60); // Increased character size
+    easyOption.setCharacterSize(60); 
     easyOption.setFillColor(sf::Color::White);
     easyOption.setPosition(350, 250);
 
     hardOption.setFont(font);
     hardOption.setString("HARD");
-    hardOption.setCharacterSize(60); // Increased character size
+    hardOption.setCharacterSize(60); 
     hardOption.setFillColor(sf::Color::White);
     hardOption.setPosition(350, 350);
 
-    levelText.setFont(font); // Added level text
+    levelText.setFont(font); 
     levelText.setString("Level:");
     levelText.setCharacterSize(45);
     levelText.setFillColor(sf::Color::White);
@@ -34,7 +34,7 @@ void MainMenu::render(sf::RenderWindow& window) {
     window.draw(title);
     window.draw(easyOption);
     window.draw(hardOption);
-    window.draw(levelText); // Render level text
+    window.draw(levelText); 
 }
 
 void MainMenu::handleEvent(sf::Event event, sf::RenderWindow& window, bool& startGame, bool& hardMode) {
