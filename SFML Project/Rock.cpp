@@ -1,7 +1,7 @@
 #include "Rock.hpp"
 
 Rock::Rock(const sf::Texture& texture)
-    : m_speed(5.0f) // Set the speed of the rocks
+    : m_speed(5.0f) 
 {
     m_sprite.setTexture(texture);
 }
