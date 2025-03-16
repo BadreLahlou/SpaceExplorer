@@ -14,7 +14,7 @@ private:
     sf::Text title;
     sf::Text easyOption;
     sf::Text hardOption;
-    sf::Text levelText; // Added level text
+    sf::Text levelText; 
 };
 
-#endif // MAINMENU_HPP
+#endif 
