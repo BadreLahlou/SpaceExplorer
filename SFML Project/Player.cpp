@@ -8,8 +8,8 @@ Player::Player()
     }
 
     m_sprite.setTexture(m_texture);
-    m_sprite.setScale(0.2f, 0.2f); // Scale down the spaceship
-    m_sprite.setPosition(400.f, 500.f); // Starting position
+    m_sprite.setScale(0.2f, 0.2f); 
+    m_sprite.setPosition(400.f, 500.f); 
 }
 
 void Player::handleInput(sf::Keyboard::Key key, bool isPressed) {
@@ -41,7 +41,7 @@ void Player::update(sf::Time deltaTime) {
 
     m_sprite.move(movement * deltaTime.asSeconds());
 
-    // Ensure the spaceship doesn't move outside the window
+    
     sf::Vector2f position = m_sprite.getPosition();
     if (position.x < 0) {
         m_sprite.setPosition(0, position.y);
