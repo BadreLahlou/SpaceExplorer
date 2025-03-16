@@ -27,4 +27,4 @@ private:
     float amplitude;
 };
 
-#endif // ALIEN_HPP
+#endif
