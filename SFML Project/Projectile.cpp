@@ -2,17 +2,17 @@
 
 Projectile::Projectile() : speed(-6.0f) {
     if (!m_texture.loadFromFile("projectile1.png")) {
-        // Handle error
+       
     }
     m_sprite.setTexture(m_texture);
-    m_sprite.setScale(0.1f, 0.1f); // Adjust the scale as needed
+    m_sprite.setScale(0.1f, 0.1f); 
 }
 
 void Projectile::update() {
     m_sprite.move(0, speed);
 }
 
-void Projectile::render(sf::RenderWindow& window) const { // Marked as const
+void Projectile::render(sf::RenderWindow& window) const { 
     window.draw(m_sprite);
 }
 
