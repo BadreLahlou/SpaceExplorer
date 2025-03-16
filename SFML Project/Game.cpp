@@ -9,7 +9,7 @@
 Game::Game()
     : m_window(sf::VideoMode(800, 600), "SFML Game"), m_player(), gameOver(false), startGame(false), hardMode(false), mainMenu(), playerRecord(0.0f), bestRecord(0.0f), isNewRecord(false) {
     m_window.setFramerateLimit(60);
-    m_player.setPosition(400.f, 500.f); // Adjust starting position of the player
+    m_player.setPosition(400.f, 500.f); 
 
     if (!backgroundTexture.loadFromFile("space_background2.png")) {
         std::cerr << "Failed to load space_background.png" << std::endl;
@@ -57,19 +57,19 @@ Game::Game()
     timerText.setFillColor(sf::Color::White);
     timerText.setPosition(10, 10);
 
-    // New record text
+    
     newRecordText.setFont(font);
     newRecordText.setCharacterSize(30);
     newRecordText.setFillColor(sf::Color::Green);
     newRecordText.setPosition(300, 300);
 
-    // Record text
+   
     recordText.setFont(font);
     recordText.setCharacterSize(30);
     recordText.setFillColor(sf::Color::White);
     recordText.setPosition(300, 200);
 
-    // Game Over menu and buttons
+    
     showGameOverMenu = false;
 
     restartButton.setSize(sf::Vector2f(200, 50));
@@ -128,7 +128,7 @@ void Game::processEvents() {
             if (event.type == sf::Event::MouseButtonPressed) {
                 sf::Vector2i mousePosition = sf::Mouse::getPosition(m_window);
                 if (restartButton.getGlobalBounds().contains(static_cast<sf::Vector2f>(mousePosition))) {
-                    // Restart the game
+                   
                     gameOver = false;
                     startGame = true;
                     showGameOverMenu = false;
@@ -150,15 +150,15 @@ void Game::processEvents() {
 
 void Game::update(sf::Time deltaTime) {
     if (startGame && !gameOver) {
-        // Update player
+        
         m_player.update(deltaTime);
 
-        // Update projectiles
+        
         for (auto& projectile : m_projectiles) {
             projectile.update();
         }
 
-        // Remove projectiles that are off-screen
+       
         m_projectiles.erase(
             std::remove_if(m_projectiles.begin(), m_projectiles.end(), [](const Projectile& projectile) {
                 return projectile.getBounds().top + projectile.getBounds().height < 0;
@@ -166,20 +166,20 @@ void Game::update(sf::Time deltaTime) {
             m_projectiles.end()
         );
 
-        // Update aliens
+        
         for (auto& alien : m_aliens) {
             alien.update();
         }
 
-        // Update rocks
+        
         for (auto& rock : m_rocks) {
             rock.update();
         }
 
-        // Check collisions
+       
         checkCollisions();
 
-        // Scroll background
+       
         float scrollSpeed = 0.0f;
         sf::Vector2u windowSize = m_window.getSize();
 
@@ -194,19 +194,19 @@ void Game::update(sf::Time deltaTime) {
             backgroundSprite2.setPosition(0, backgroundSprite1.getPosition().y - static_cast<float>(windowSize.y));
         }
 
-        // Spawn aliens periodically
+        
         if (alienSpawnClock.getElapsedTime().asSeconds() > 2) {
             spawnAliens();
             alienSpawnClock.restart();
         }
 
-        // Spawn rocks periodically in hard mode
+        
         if (hardMode && rockSpawnClock.getElapsedTime().asSeconds() > 3) {
             spawnRocks();
             rockSpawnClock.restart();
         }
 
-        // Update timer
+      
         sf::Time elapsedTime = gameClock.getElapsedTime();
         timerText.setString("Time: " + std::to_string(static_cast<int>(elapsedTime.asSeconds())) + "s");
         playerRecord = elapsedTime.asSeconds();
@@ -217,7 +217,7 @@ void Game::render() {
     m_window.clear();
 
     if (!startGame) {
-        // Draw the main menu without clearing the window each frame
+        
         mainMenu.render(m_window);
     } else {
         m_window.draw(backgroundSprite1);
@@ -237,9 +237,9 @@ void Game::render() {
         }
 
         if (gameOver) {
-            // Draw a black rectangle over the entire window
+            
             sf::RectangleShape blackOverlay(sf::Vector2f(m_window.getSize()));
-            blackOverlay.setFillColor(sf::Color(0, 0, 0, 255)); // Solid black
+            blackOverlay.setFillColor(sf::Color(0, 0, 0, 255)); 
             m_window.draw(blackOverlay);
 
             displayGameOverScreen();
@@ -255,20 +255,20 @@ void Game::spawnAliens() {
     for (int i = 0; i < 8; ++i) {
         Alien alien;
         alien.setTexture(alienTexture);
-        float x = static_cast<float>(rand() % 700); // Random x position
-        float y = static_cast<float>(-rand() % 600); // Random y position above the screen
-        alien.setPosition(x, y); // Spawn above the screen
-        alien.setSpriteScale(0.04f, 0.04f); // Scale the aliens down to 30%
+        float x = static_cast<float>(rand() % 700); 
+        float y = static_cast<float>(-rand() % 600); 
+        alien.setPosition(x, y); 
+        alien.setSpriteScale(0.04f, 0.04f); 
 
-        // Adjust speed based on game mode
+        
         if (hardMode) {
-            alien.setSpeed(2.0f); // Set higher speed for hard mode
+            alien.setSpeed(2.0f); 
         } else {
-            alien.setSpeed(1.0f); // Set lower speed for easy mode
+            alien.setSpeed(1.0f); 
         }
 
-        // Randomly set zigzag movement
-        bool shouldZigzag = rand() % 1 == 0; // 50% chance of zigzag
+        
+        bool shouldZigzag = rand() % 1 == 0; 
         alien.setZigzag(shouldZigzag);
         m_aliens.push_back(alien);
     }
@@ -277,9 +277,9 @@ void Game::spawnAliens() {
 void Game::spawnRocks() {
     for (int i = 0; i < 4; ++i) {
         Rock rock(rockTexture);
-        float x = static_cast<float>(rand() % 700); // Random x position
-        float y = static_cast<float>(-rand() % 600); // Random y position above the screen
-        rock.setPosition(x, y); // Spawn above the screen
+        float x = static_cast<float>(rand() % 700); 
+        float y = static_cast<float>(-rand() % 600); 
+        rock.setPosition(x, y); 
         m_rocks.push_back(rock);
         
     }
@@ -322,11 +322,11 @@ void Game::checkCollisions() {
 void Game::displayGameOverScreen() {
     m_window.draw(gameOverText);
 
-    // Update and display record text
+    
     recordText.setString("Your Record: " + std::to_string(static_cast<int>(playerRecord)) + "s");
     m_window.draw(recordText);
 
-    // If new record, update text appearance
+   
     if (isNewRecord) {
         newRecordText.setString("YOU GOT A NEW RECORD: " + std::to_string(static_cast<int>(playerRecord)) + "s");
         newRecordText.setCharacterSize(40);
@@ -334,7 +334,7 @@ void Game::displayGameOverScreen() {
         m_window.draw(newRecordText);
     }
 
-    // Draw restart and exit buttons
+   
     m_window.draw(restartButton);
     m_window.draw(exitButton);
     m_window.draw(restartButtonText);
