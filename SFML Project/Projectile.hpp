@@ -7,7 +7,7 @@ class Projectile {
 public:
     Projectile();
     void update();
-    void render(sf::RenderWindow& window) const; // Marked as const
+    void render(sf::RenderWindow& window) const; 
     void setPosition(float x, float y);
     sf::FloatRect getBounds() const;
 
@@ -17,4 +17,4 @@ private:
     float speed;
 };
 
-#endif // PROJECTILE_HPP
+#endif 
